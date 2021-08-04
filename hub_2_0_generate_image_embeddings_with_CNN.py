@@ -12,7 +12,7 @@ Author: Margaux Masson-Forsythe
 ## Imports
 """
 
-!pip3 install hub==2.0.4 && torch==1.8.1
+# !pip3 install hub==2.0.4 && torch==1.8.1
 # restart runtime after installing
 # using torch 1.8.1 because of an error 403 happening with the older version
 
@@ -37,9 +37,9 @@ print(torch.__version__)
 
 """## Load Data: Dog breeds from https://www.kaggle.com/eward96/dog-breed-images"""
 
-!export KAGGLE_USERNAME="xxxx" && export KAGGLE_KEY="xxxxx" && mkdir -p data && cd data && kaggle datasets download -d eward96/dog-breed-images && unzip -n dog-breed-images.zip && rm dog-breed-images.zip
+# !export KAGGLE_USERNAME="xxxx" && export KAGGLE_KEY="xxxxx" && mkdir -p data && cd data && kaggle datasets download -d eward96/dog-breed-images && unzip -n dog-breed-images.zip && rm dog-breed-images.zip
 
-!ls data
+# !ls data
 
 data_dir = 'data'
 
@@ -105,7 +105,7 @@ np.array(list_embeddings[0]).shape
 
 """## Send to Hub"""
 
-!activeloop login -u username -p password
+# !activeloop login -u username -p password
 
 hub_dogs_path = 'hub://margauxmforsythe/dogs_breeds_embeddings'
 
