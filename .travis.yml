@@ -2,9 +2,7 @@ language: python
 
 # command to install dependencies
 install:
-  - pip install -r requirements.txt
+  - pip3 install -r requirements.txt
 #   - pip3 install --upgrade pip
-  
-# install: pip3 install --upgrade pip  # all three OSes agree about 'pip3'
-      
+        
 script: echo hello 
